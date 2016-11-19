@@ -1,8 +1,7 @@
-import java.util.List;
 import java.util.Scanner;
 
 /**
- * Created by Dionis on 03/11/2015.
+ * Created by 53638138e on 09/11/16.
  */
 
 public class Supermarket {

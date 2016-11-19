@@ -1,7 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Random;
-
 /**
  * Created by 53638138e on 09/11/16.
  */
@@ -38,21 +34,21 @@ public class Cua {
 
     //Getters
 
+    //Este metodo calcula el tiempo que el cliente esta
         public int tiempomedio(int temps){
-
-            tiempo = + (temps /2)/2;
-            return temps/2;
+            this.tiempo = temps;
+            return temps;
         }
-
+    //Este metodo abisa que la cola esta libre
         public synchronized void desocuparCua( int tria_cua ) {
             this.cajas[tria_cua] = false;
             notify();
         }
-
+    //solo devuelbe el numero de cajas
         public int getNumCaixes() {
             return nuncaixes;
         }
-
+    //calcula lo que hay que pagar que es introducido un valor aleatorio por el tiempo que el cliente lleva en el supermercado
         public double Pagar(int tot) {
             total = tot*tiempo;
             return total;
